@@ -35,7 +35,7 @@ app.post('/create', (req, res) => {
 
 app.get('/read', (req, res) => {
   // Use db connection to find all documents in collection
-  db.collection('petCollection')
+  db.collection('userCollection')
     .find()
     .toArray((err, results) => {
       if (err) throw err;
